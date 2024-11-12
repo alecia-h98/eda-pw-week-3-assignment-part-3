@@ -34,6 +34,6 @@ Optionally, you may also write any remaining questions you have for the week in 
 
 ## Assignment Submission
 
-Check in your repo, then turn in your work via the Prime Academy Assignment Application at [Assignment Portal](https://portal.emergingacademy.org), as usual and don't hesitate to hit up the Slack channel as needed!
+Check in your repo, then turn in your work via the [Assignment Portal](https://portal.emergingacademy.org), as usual and don't hesitate to hit up the Slack channel as needed!
 
 **Make sure that you answer this week's discussion question in Slack!**
