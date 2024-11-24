@@ -66,7 +66,9 @@ let totalParts = 0;
 console.log('9. Filling boxes with a "while" loop');
 let parts = 572;
 let boxesFilled = 0;
-while
+while(boxesFilled){
+  
+}
 
 // DO NOT MODIFY
 // Used for automated testing
