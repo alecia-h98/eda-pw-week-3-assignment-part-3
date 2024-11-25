@@ -10,22 +10,25 @@ let partsNeeded = 40;
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
-let supplyChanges = ('3', '5', '-6', '0', '7', '11')
+let supplyChanges = ['3', '5', '-6', '0', '7', '11'];
+console.log('List of items in supply changes:', supplyChanges);
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
 //    item in the 'supplyChanges' array.
 console.log('3. Access the second value of supplyChanges:');
-let secondItem = 5;
+let secondItem = supplyChanges[1];
+console.log(secondItem);
 
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
-supplyChanges.pop();
-let removedItem = 11; 
+let removedItem = supplyChanges.pop();
+console.log('Updated array list:', supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
 supplyChanges.push('25');
+console.log('added element to array:', supplyChanges);
 
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop
