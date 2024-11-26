@@ -39,10 +39,22 @@ console.log('added element to array:', supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
-let positive = [];
+let positives = [];
 let negatives = [];
-let zeros = [];
-
+let zeroes = [];
+for (let i = 0; i < supplyChanges.length; i++){
+    console.log(supplyChanges[i]);
+    if(supplyChanges > 0){
+      positives.push(supplyChanges[i]);
+    } else if( supplychanges < 0){
+      negatives.push(supplyChanges[i])
+    } else if( supplychanges === 0){
+      zeroes.push(supplyChanges[i]);
+    }
+}
+console.log( 'Positive array:', positives);
+console.log( 'Negative array:', negatives);
+console.log('Zeroes array:', zeroes)
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
@@ -56,6 +68,11 @@ console.log('7. Looping through supplyChanges to populate more arrays with posit
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
 let totalParts = 0;
+for ( i=0; i < supplyChanges.length; i++){
+  totalParts += supplyChanges[i];
+}
+console.log(totalParts);
+
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. There are 572
@@ -69,11 +86,8 @@ let totalParts = 0;
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
-let parts = 572;
-let boxesFilled = 0;
-while(boxesFilled){
-  
-}
+
+
 
 // DO NOT MODIFY
 // Used for automated testing
