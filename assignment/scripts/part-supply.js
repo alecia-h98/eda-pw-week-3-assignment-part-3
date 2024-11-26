@@ -54,7 +54,7 @@ for (let i = 0; i < supplyChanges.length; i++){
 }
 console.log( 'Positive array:', positives);
 console.log( 'Negative array:', negatives);
-console.log('Zeroes array:', zeroes)
+console.log( 'Zeroes array:', zeroes);
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
