@@ -11,8 +11,13 @@ console.log(partsNeeded);
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
-let supplyChanges = ['3', '5', '-6', '0', '7', '11'];
+let supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log('List of items in supply changes:', supplyChanges);
+
+//for of loop
+for(let supply of supplyChanges){
+  console.log(`Number: ${supply}`);
+}
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
 //    item in the 'supplyChanges' array.
@@ -28,8 +33,12 @@ console.log('Updated array list:', supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
-supplyChanges.push('25');
+supplyChanges.push(25);
 console.log('added element to array:', supplyChanges);
+
+
+
+
 
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop
@@ -38,17 +47,17 @@ console.log('added element to array:', supplyChanges);
 //      - If the value is a positive number, push it into the 'positives' array.
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
-console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
+// console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 let positives = [];
 let negatives = [];
 let zeroes = [];
 for (let i = 0; i < supplyChanges.length; i++){
-    console.log(supplyChanges[i]);
-    if(supplyChanges > 0){
+  console.log(supplyChanges[i]);
+    if(supplyChanges[i] > 0){
       positives.push(supplyChanges[i]);
-    } else if( supplychanges < 0){
+    } else if( supplyChanges[i] < 0){
       negatives.push(supplyChanges[i])
-    } else if( supplychanges === 0){
+    } else if( supplyChanges[i] === 0){
       zeroes.push(supplyChanges[i]);
     }
 }
@@ -60,7 +69,7 @@ console.log( 'Zeroes array:', zeroes);
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
 //    'stretchNegatives', and 'stretchZeroes'. 
-console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
+// console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
 
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
@@ -86,8 +95,15 @@ console.log(totalParts);
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572;
+let boxesFilled = 0;
 
-
+while( parts >= 7) {
+  parts -= 7;
+  boxesFilled++;
+}
+console.log("Boxes filled:", boxesFilled);
+console.log("Parts left over:", parts);
 
 // DO NOT MODIFY
 // Used for automated testing
